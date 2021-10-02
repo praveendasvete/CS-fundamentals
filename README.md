@@ -4,8 +4,7 @@ Welcome to GitHub—where millions of developers work together on software. Read
 yes please wecome
 #yes
 
-Yes this is a great repo
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
+
 
 
 **GitHub Pages** is a free and easy way to create a website using the code that lives in your GitHub repositories. You can use GitHub Pages to build a portfolio of your work, create a personal website, or share a fun project that you coded with the world. GitHub Pages is automatically enabled in this repository, but when you create new repositories in the future, the steps to launch a GitHub Pages website will be slightly different.
@@ -41,7 +40,8 @@ With each commit, you have the opportunity to write a **commit message**, a shor
 Want to edit the site you just published? Let’s practice commits by introducing yourself in your `index.html` file. Don’t worry about getting it right the first time—you can always build on your introduction later.
 
 Let’s start with this template:
-
+Yes this is a great repo
+[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
 ```
 <p>Hello World! I’m [username]. This is my website!</p>
 ```
@@ -76,9 +76,9 @@ Once you click `Commit changes`, your changes will automatically be published on
 Change the placeholder Octocat gif on your GitHub Pages website by [creating your own personal Octocat emoji](https://myoctocat.com/build-your-octocat/) or [choose a different Octocat gif from our logo library here](https://octodex.github.com/). Add that image to line 12 of your `index.html` file, in place of the `<img src=` link.
 
 Want to add even more code and fun styles to your GitHub Pages website? [Follow these instructions](https://github.com/github/personal-website) to build a fully-fledged static website.
-
+## Everything you need to know about GitHub
 ![octocat](./images/create-octocat.png)
 
-## Everything you need to know about GitHub
+
 
 Getting started is the hardest part. If there’s anything you’d like to know as you get started with GitHub, try searching [GitHub Help](https://help.github.com). Our documentation has tutorials on everything from changing your repository settings to configuring GitHub from your command line.
