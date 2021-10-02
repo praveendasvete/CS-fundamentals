@@ -2,8 +2,7 @@
 <h1>this is great </h1>
 <p>hi</p>
 <h2>helllllo</h2>
-</html>
-<html>
+<h7>This is 7th tag</h7>
 <h6>hello world</h6>
 <h3>hrllo re </h3>
 </html>
