@@ -1,29 +1,27 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-int add(int **a,int m,int n){
-    return a[0][1]+a[1][0];
-}
-
-int main()
-{
-    int m,n;
-    cin>>m;
-    cin>>n;
-    int** a = new int*[m];
- 
-    for (int i = 0; i < m; i++) {
-        a[i] = new int[n];
-    }
-    for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
-            cin>>a[i][j];
+void printLevelOrderTreeFashion(node* root){
+    queue<node*>q;
+    q.push(root);
+    q.push(NULL);
+    
+    while(!q.empty()){
+        node* temp = q.front();
+        if(temp==NULL){
+            cout<<endl;
+            q.pop();
+            
+            if(!q.empty()){
+                q.push(NULL);
+            }
         }
-    }
-    
-   
-    int sum = add(a,m,n);
-    cout<<sum;
-    
-    return 0;
+        else{
+        q.pop();
+        cout<<temp->data<<" ";
+        if(temp->left){
+            q.push(temp->left);
+        }
+        if(temp->right){
+            q.push(temp->right);
+        }
+        
+        }
 }
