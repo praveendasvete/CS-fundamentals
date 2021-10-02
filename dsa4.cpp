@@ -1,65 +1,27 @@
 #include <bits/stdc++.h>
-
+int count;
 using namespace std;
 
-class node{
-    public:
-          int data;
-          node* left;
-          node* right;
-          
-          node(int d){
-              data=d;
-              left=NULL;
-              right=NULL;
-          }
-};
 
-node* buildBST(node* root,int data){
-    if(root==NULL){
-        return new node(data);
+
+void subsets(char *a,int i,int j,char *temp){
+    if(a[i]=='\0'){
+        temp[j]='\0';
+        cout<<temp<<endl;
+        return;
     }
-    else if(data<root->data){
-        root->left = buildBST(root->left,data);
-    }
-    else{
-        root->right = buildBST(root->right,data);
-    }
-    return root;
+    
+    temp[j]=a[i];
+    subsets(a,i+1,j+1,temp);
+    subsets(a,i+1,j,temp);
 }
 
-void printLevelOrderNormal(node* root){
-    queue<node*>q;
-    q.push(root);
-    
-    
-    while(!q.empty()){
-        node* temp = q.front();
-        cout<<temp->data<<" ";
-        q.pop();
-        
-        if(temp->left){
-            q.push(temp->left);
-        }
-        if(temp->right){
-            q.push(temp->right);
-        }
-        
-    }
-    #include <bits/stdc++.h>
+int main()
+{
+    char a[100];
+    cin>>a;
+    char temp[100];
+    subsets(a,0,0,temp);
 
-using namespace std;
-
-struct Item{
-    int value;
-    int weight;
-};
-
-//Comparator funtion to return the descending fractional numbers
-
-bool comp(Item item1,Item item2){
-    double r1 = (double)item1.value/(double)item1.weight;
-    double r2 =(double)item2.value/(double)item2.weight;
-    return r1>r2;
-}
+    return 0;
 }
