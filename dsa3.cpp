@@ -44,6 +44,7 @@ int main()
          
     for(f=0;f<c;f++)
         printf("Case #%d: %d\n",f+1,a[f]);
-    return 0;
+        printf("Case #%d: %d\n",f+1,a[f]);
+        return 0;
 }
 } 
