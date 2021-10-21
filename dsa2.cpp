@@ -26,6 +26,11 @@ void pop(vector<int>&a)
     if(!isEmpty(a))
         a.pop_back();
 }
+void pop(vector<int>&a)
+{
+    if(!isEmpty(a))
+        a.pop_back();
+}
 
 
 int main()
