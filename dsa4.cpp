@@ -15,6 +15,17 @@ void subsets(char *a,int i,int j,char *temp){
     subsets(a,i+1,j+1,temp);
     subsets(a,i+1,j,temp);
 }
+void subsets(char *a,int i,int j,char *temp){
+    if(a[i]=='\0'){
+        temp[j]='\0';
+        cout<<temp<<endl;
+        return;
+    }
+    
+    temp[j]=a[i];
+    subsets(a,i+1,j+1,temp);
+    subsets(a,i+1,j,temp);
+}
 
 int main()
 {
