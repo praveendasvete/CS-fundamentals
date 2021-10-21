@@ -13,5 +13,11 @@ cur->link=prev;
 prev=cur;
 cur=next;
 }
+  while(cur!=NULL){
+next=cur->link;
+cur->link=prev;
+prev=cur;
+cur=next;
+}
 return prev;
 }
