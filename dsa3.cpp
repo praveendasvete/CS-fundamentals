@@ -28,6 +28,14 @@ int main()
                  if(temp==temp1)
                   count++;
                }
+             for(j=i;j<num;j++)
+               {
+                 sum+=arr[j];
+                 temp =sqrt(sum);
+                 temp1 =sqrt(sum);
+                 if(temp==temp1)
+                  count++;
+               }
            }
         
         a[m++]=count;
