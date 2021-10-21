@@ -13,10 +13,13 @@ void top(vector<int>&a){
     k = a[a.size()-1];
     cout<<k<<endl;
 }
-
-bool isEmpty(vector<int>&a){
-    return a.size()==0;
+void top(vector<int>&a){
+    int k;
+    k = a[a.size()-1];
+    cout<<k<<endl;
 }
+
+
 
 void pop(vector<int>&a)
 {
