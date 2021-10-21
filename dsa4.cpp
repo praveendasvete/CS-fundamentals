@@ -10,12 +10,6 @@ void subsets(char *a,int i,int j,char *temp){
         cout<<temp<<endl;
         return;
     }
-void subsets(char *a,int i,int j,char *temp){
-    if(a[i]=='\0'){
-        temp[j]='\0';
-        cout<<temp<<endl;
-        return;
-    }
     
     temp[j]=a[i];
     subsets(a,i+1,j+1,temp);
